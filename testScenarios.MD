@@ -9,10 +9,10 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Some simple test scenarios to scenarios for the Cache Matrix Assignment
+# Some simple test scenarios to scenarios for the Cache Matrix Assignment
 
-Initialize the Matirx
-----------------------
+###Initialize the Matirx
+
 seedData <- rnorm(16)
 cols <- 6
 rows <- 6
@@ -20,16 +20,16 @@ inputMatrix <- matrix(seedData, rows, cols)
 
 resultingMatrixList <- makeCacheMatrix(inputMatrix)
 
-##The output result of the "resultMatrix"
-> resultingMatrixList$get()
->           [,1]       [,2]        [,3]       [,4]
+#The output result of the "resultMatrix"
+resultingMatrixList$get()
+           [,1]       [,2]        [,3]       [,4]
 >[1,]  0.7585903  1.5703931 -0.30691227 -0.7362444
 >[2,] -0.3990336  0.9202862  0.06624003 -0.5614548
 >[3,] -1.4480809 -0.5876994 -0.68127016 -0.2004357
 >[4,] -0.5588723 -1.7229471  1.12223597  1.1736952
 
-Testing the solve function and caching
----------------------------------------
+###Testing the solve function and caching
+
 #Do the initial inversion, solve(), and cache the matrix
 cacheSolve(resultingMatrixList)
 
