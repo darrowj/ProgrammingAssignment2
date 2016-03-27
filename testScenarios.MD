@@ -14,8 +14,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ###Initialize the Matirx
 
 seedData <- rnorm(16)
-cols <- 6
-rows <- 6
+cols <- 4
+rows <- 4
 inputMatrix <- matrix(seedData, rows, cols)
 
 resultingMatrixList <- makeCacheMatrix(inputMatrix)
