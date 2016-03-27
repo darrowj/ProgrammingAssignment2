@@ -1,4 +1,4 @@
-## Jason Darrow Coursera Assignment Week3
+## Jason Darrow Coursera Assignment Week 3
 ## Put comments here that give an overall description of what your
 ## functions do
 
